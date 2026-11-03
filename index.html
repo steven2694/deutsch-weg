@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deutsch Weg 2.0｜德语 A1 训练系统</title>
+<style>
+:root{--navy:#142b45;--blue:#2457c5;--bg:#f3f6fa;--card:#fff;--ink:#17212b;--muted:#637181;--line:#e2e8ef;--green:#16764f;--red:#b33b32}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--navy);color:white;padding:22px max(18px,calc((100% - 1160px)/2))}
+header h1{margin:0;font-size:25px}header p{margin:4px 0;color:#d7e1ec}
+main{max-width:1160px;margin:20px auto;padding:0 15px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:17px}
+nav,.panel{background:var(--card);border:1px solid var(--line);border-radius:14px}
+nav{padding:10px;height:max-content;position:sticky;top:12px}nav button{width:100%;display:block;text-align:left;padding:10px 12px;border:0;background:none;border-radius:9px;color:var(--ink);cursor:pointer;font:inherit}
+nav button.active,nav button:hover{background:#edf2ff;color:var(--blue);font-weight:650}
+.panel{padding:19px;margin-bottom:15px}.panel h2{font-size:20px;margin:0 0 9px}.panel h3{font-size:17px;margin:12px 0 5px}
+.muted,small{color:var(--muted)}.muted{font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{padding:12px;border:1px solid var(--line);border-radius:11px}.stat b{font-size:24px;display:block}
+.row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.between{justify-content:space-between}
+button,.btn{font:inherit;border:1px solid var(--line);border-radius:9px;background:white;padding:8px 12px;cursor:pointer;color:var(--ink)}
+button.primary{background:var(--blue);color:#fff;border-color:var(--blue)}button.success{background:#e9f6ef;color:var(--green);border-color:#cfe9da}
+button:disabled{opacity:.45;cursor:not-allowed}
+input,select,textarea{font:inherit;border:1px solid var(--line);border-radius:8px;padding:9px;max-width:100%}textarea{width:100%;min-height:105px}
+.progress{height:9px;border-radius:20px;background:#e9edf2;overflow:hidden}.progress span{height:100%;display:block;background:var(--blue)}
+.tag{background:#eef2f7;color:#526171;border-radius:20px;padding:3px 8px;font-size:12px}
+.lesson{border:1px solid var(--line);border-radius:11px;padding:13px;margin:9px 0}.lesson.current{border-color:#8da8ed;background:#f8faff}
+.task{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.task:last-child{border:0}.task input{width:18px;height:18px;margin-top:4px}.task.done .taskbody{color:var(--muted);text-decoration:line-through}
+.example{background:#f5f7fa;padding:10px 12px;border-radius:9px;margin:7px 0}.de{font-weight:700;font-size:17px}.translation{color:var(--muted)}
+.wordcard{border:1px solid var(--line);border-radius:12px;padding:16px;margin:10px 0}.wordcard .de{font-size:23px}
+.q{border:1px solid var(--line);padding:13px;border-radius:10px;margin:11px 0}.q label{display:block;margin:5px 0}
+.feedback{font-weight:650;margin-top:7px}.ok{color:var(--green)}.bad{color:var(--red)}.hide{display:none}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+footer{max-width:1160px;margin:auto;padding:0 15px 28px;color:var(--muted);font-size:13px}
+@media(max-width:760px){main{grid-template-columns:1fr}nav{position:static;display:grid;grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr}.panel{padding:15px}}
+</style>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#142b45">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Deutsch Weg">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+</head>
+<body>
+<header><h1>Deutsch Weg 2.0｜德语 A1 训练系统</h1><p>从零开始 · 每天 120 分钟 · 30 天基础课程 · 掌握度升级 · 本地保存</p></header>
+<main>
+<nav id="nav">
+<button data-page="dashboard" class="active">🏠 学习总览</button>
+<button data-page="course">📚 每日课程</button>
+<button data-page="vocab">🧠 单词记忆</button>
+<button data-page="practice">🎧 听说读写训练</button>
+<button data-page="exam">📝 阶段测评</button>
+<button data-page="roadmap">🗺️ A1–B2 路线</button>
+<button data-page="data">⚙️ 设置与备份</button>
+</nav>
+<section>
+<div id="dashboard" class="page">
+<div class="panel"><div class="row between"><div><h2>Willkommen! 欢迎来到德语课堂</h2><div class="muted">你的目标不是“学完课程”，而是能听懂、能表达、能在真实生活中使用德语。</div></div><span class="tag" id="level">当前阶段：A1</span></div>
+<div class="grid" style="margin-top:15px"><div class="stat"><small>课程完成</small><b id="completed">0 / 30</b></div><div class="stat"><small>词汇学习数</small><b id="wordCount">0</b></div><div class="stat"><small>测评平均分</small><b id="average">—</b></div></div></div>
+<div class="panel"><div class="row between"><h2>今天的学习任务</h2><span class="tag" id="dayBadge">第 1 天</span></div><h3 id="todayTitle">字母与发音</h3><div class="progress"><span id="todayProgress" style="width:0%"></span></div><p class="muted" id="todayPct">0 / 6 项任务完成</p><button class="primary" onclick="go('course')">进入今日课程</button></div>
+<div class="panel"><h2>每日 120 分钟训练结构</h2><div class="grid"><div class="stat"><b>20 分钟</b><small>词汇与主动回忆</small></div><div class="stat"><b>25 分钟</b><small>语法与造句</small></div><div class="stat"><b>25 分钟</b><small>听力与跟读</small></div><div class="stat"><b>20 分钟</b><small>阅读理解</small></div><div class="stat"><b>15 分钟</b><small>口语输出</small></div><div class="stat"><b>15 分钟</b><small>写作与复盘</small></div></div></div>
+<div class="panel"><h2>学习规则</h2><ul><li>每天完成课程、练习和复习；每 7 天安排复盘。</li><li>单词要连同冠词、复数或动词搭配一起记忆。</li><li>先听/读，再看文本；先自己回答，再查看答案。</li><li>测评低于 70% 时先补弱项；阶段升级必须通过四项能力检查。</li><li>程序记录你的练习情况，但不能仅凭自评证明真实 B2 能力。</li></ul></div>
+</div>
+<div id="course" class="page hide"><div class="panel"><div class="row between"><div><h2 id="lessonHeading">第 1 天｜字母与发音</h2><div class="muted" id="lessonGoal"></div></div><select id="daySelect" onchange="selectDay(this.value"></select></div><div id="lessonContent"></div><h3>今日六项训练</h3><div id="dailyTasks"></div><div class="row between"><small id="taskCount">0/6 完成</small><button class="primary" onclick="completeLesson()">提交今日课程</button></div><div id="lessonFeedback" class="feedback"></div></div>
+<div class="panel"><h2>学习笔记</h2><textarea id="notes" placeholder="记录今天最容易混淆的语法、发音或错题……"></textarea><button onclick="saveNote()">保存笔记</button><span id="noteMsg" class="muted"></span></div></div>
+<div id="vocab" class="page hide"><div class="panel"><h2>间隔重复单词卡</h2><p class="muted">先看德语，主动说出中文和例句，再翻面。认识：按 1、3、7、14、30 天递增；忘记：明天重练。</p><div id="flash"></div><div class="row"><button class="primary" onclick="flip()">显示答案</button><button class="success" onclick="grade(true)">我记住了</button><button onclick="grade(false)">还不熟</button></div><p id="vocabStatus" class="muted"></p></div><div class="panel"><h2>本课程核心词汇</h2><div id="wordTable"></div></div></div>
+<div id="practice" class="page hide"><div class="panel"><h2>听力与发音实验室</h2><p class="muted">浏览器语音功能会调用设备可用的德语语音。不同设备发音质量不同，不能替代真人原声听力。</p><div id="audioText" class="example"></div><div class="row"><button class="primary" onclick="speak()">🔊 播放德语</button><button onclick="speakSlow()">🐢 慢速播放</button><button onclick="showTranscript()">显示/隐藏文本</button></div><div id="transcript" class="hide"></div><h3>听写挑战</h3><p>播放句子后，尝试不看文本写下来：</p><textarea id="dictation" placeholder="在这里输入你听到的德语……"></textarea><button onclick="checkDictation()">检查听写</button><p id="dictationResult" class="feedback"></p></div>
+<div class="panel"><h2>口语与写作输出</h2><p><b>口语任务：</b><span id="oralPrompt"></span></p><p class="muted">先不看范例，连续说 30–60 秒并录音。回听时检查：动词位置、词尾、名词大写、停顿。</p><p><b>写作任务：</b><span id="writePrompt"></span></p><textarea id="writing" placeholder="写下你的德语答案……"></textarea><button onclick="saveWriting()">保存写作</button><p id="writingMsg" class="muted"></p></div></div>
+<div id="exam" class="page hide"><div class="panel"><h2>阶段测评｜A1 基础检查</h2><p class="muted">本测验是课程内形成性测评，不是官方 Goethe 考试题，也不能单独判定 CEFR 级别。完成后查看错题解释。</p><div id="examQuestions"></div><button class="primary" onclick="submitExam()">提交测评</button><div id="examScore" class="feedback"></div></div><div class="panel"><h2>升级标准</h2><ul><li>课程任务完成率至少 85%。</li><li>本系统阶段测验至少 80%，错题完成订正。</li><li>口语：不看稿完成 1 分钟自我介绍与日常问答。</li><li>写作：独立完成约 60–80 词的连贯短文。</li><li>听力/阅读：使用额外 A1 级别材料检查理解，不只依赖本程序。</li></ul><p class="muted">满足这些条件后，建议进入 A1 官方模拟题/外部教材单元测试。通过外部四项考核后再进入 A2。</p></div></div>
+<div id="roadmap" class="page hide"><div class="panel"><h2>0–B2 长期路线</h2><p>以每天 2 小时、每周约 6 天为基准。总时长会因语言环境、学习质量和既有语言经验显著变化。</p><div id="stages"></div></div><div class="panel"><h2>建议免费学习资源</h2><ul><li><b>DW Learn German / Nicos Weg：</b>结构化免费课程与视频，适合 A1–B1。</li><li><b>Goethe-Institut 免费练习：</b>按级别练习听说读写，后期熟悉考试题型。</li><li><b>VHS-Lernportal：</b>系统课程与练习，适合基础到进阶。</li><li><b>Easy German：</b>真实街头访谈与字幕，适合积累真实语速输入。</li></ul><p class="muted">教材和课程版本可能更新，使用时以资源官网当前内容为准。</p></div></div>
+<div id="data" class="page hide"><div class="panel"><h2>学习设置</h2><label>开始日期　<input type="date" id="startDate"></label> <button onclick="saveStart()">保存</button><p class="muted">如果你中途休息，课程日数不会强迫你跳课。可在课程页手动选择之前的课复习。</p><h2>数据备份</h2><div class="row"><button onclick="exportData()">导出 JSON 备份</button><label class="btn">导入备份 <input type="file" accept=".json" onchange="importData(event)" style="display:none"></label><button onclick="resetAll()">重置数据</button></div><p id="dataMsg" class="muted"></p></div><div class="panel"><h2>重要说明</h2><p>学习记录保存在当前浏览器本地。更换设备或清理浏览器前请导出备份。语音播放依赖浏览器及系统语音包。当前版本提供 A1 首月课程引擎；A2–B2 为后续课程开发路线，不会伪装成已经完成的完整课程。</p></div></div>
+</section></main><footer>Deutsch Weg 2.0 · 课程为原创入门教学安排。建议配合 DW、Goethe 或 VHS-Lernportal 的系统课程与原声材料使用。</footer>
+<script>
+const lessons=[
+{t:"字母与发音",g:"认识德语字母，建立元音和特殊字母的发音意识。",gram:"德语字母表；名词首字母大写；句子首字母大写。",words:[0,1,2,3,4,5],ex:[["Hallo!","你好！"],["Guten Tag!","日安！"],["Tschüss!","再见！"]],oral:"朗读问候语，分别用正式和非正式方式打招呼。",write:"写下三种德语问候语及中文意思。",q:0},
+{t:"自我介绍一",g:"学会说姓名、来自哪里。",gram:"人称代词 ich/du；sein：ich bin, du bist, er/sie ist。",words:[3,5,6,7,8,9],ex:[["Ich heiße Lin.","我叫林。"],["Ich bin aus China.","我来自中国。"],["Wie heißt du?","你叫什么名字？"]],oral:"用德语介绍姓名和来自哪里，至少说三句。",write:"写 3 句自我介绍。",q:1},
+{t:"规则动词现在时",g:"理解动词变位，掌握基础陈述句语序。",gram:"规则动词词干 + -e/-st/-t/-en/-t/-en；陈述句变位动词通常位于第二位。",words:[10,11,12,13,14,15],ex:[["Ich lerne Deutsch.","我学习德语。"],["Du wohnst in Qingdao.","你住在青岛。"],["Wir arbeiten heute.","我们今天工作。"]],oral:"说出自己学习什么、住在哪里、会说什么语言。",write:"写五个 ich 开头的规则动词句子。",q:2},
+{t:"疑问句与数字",g:"询问姓名、地点、电话号码，并认识数字。",gram:"疑问词问句：疑问词 + 动词 + 主语；是非问句：动词 + 主语。",words:[16,17,18,19,20,21],ex:[["Wie ist deine Telefonnummer?","你的电话号码是多少？"],["Wo wohnst du?","你住在哪里？"],["Kommst du aus China?","你来自中国吗？"]],oral:"模拟初次见面，提出并回答三个问题。",write:"写出三个德语疑问句并自行回答。",q:3},
+{t:"国家与语言",g:"表达国籍、来源和语言能力。",gram:"kommen aus + 地点；sprechen + 语言；部分语言名词不加冠词。",words:[14,15,22,23,24,25],ex:[["Ich komme aus China.","我来自中国。"],["Ich spreche Chinesisch.","我说中文。"],["Ich lerne Deutsch.","我正在学德语。"]],oral:"介绍自己来自哪里、会说什么语言、正在学什么。",write:"写 4 句介绍你的语言能力。",q:4},
+{t:"名词与冠词",g:"认识 der/die/das 和 ein/eine。",gram:"德语名词有阳性、阴性、中性；学习名词必须连冠词记忆。",words:[26,27,28,29,30,31],ex:[["Das ist ein Buch.","这是一本书。"],["Der Tisch ist groß.","桌子很大。"],["Die Tasche ist neu.","包是新的。"]],oral:"指认身边五件物品，说出冠词和名称。",write:"写五个物品句子，冠词不要省略。",q:5},
+{t:"第一周复盘",g:"复习发音、sein、规则动词、问句与冠词。",gram:"综合复习；重点检查动词变位和动词第二位。",words:[0,3,5,7,8,10,12,14,26,27],ex:[["Ich heiße Lin und ich komme aus China.","我叫林，我来自中国。"],["Sprichst du Deutsch?","你说德语吗？"]],oral:"不看稿完成 30 秒自我介绍。",write:"写 5–6 句自我介绍并检查动词位置。",q:6},
+{t:"家庭成员",g:"介绍家庭成员和关系。",gram:"物主冠词 mein/dein；注意阳性、中性与阴性形式。",words:[32,33,34,35,36,37],ex:[["Das ist meine Mutter.","这是我妈妈。"],["Mein Vater wohnt in China.","我爸爸住在中国。"]],oral:"介绍两位家庭成员。",write:"写 4 句介绍家庭。",q:7},
+{t:"职业与工作",g:"说职业、工作地点和工作语言。",gram:"职业名词性别；sein + 职业通常不加不定冠词。",words:[38,39,40,41,42,43],ex:[["Ich bin Student.","我是学生。"],["Sie ist Ärztin.","她是医生。"],["Was bist du von Beruf?","你的职业是什么？"]],oral:"模拟求职初次见面，介绍职业与经验。",write:"写 5 句介绍你的学习或工作背景。",q:8},
+{t:"日常生活",g:"描述起床、工作、学习和睡觉时间。",gram:"可分动词入门：前缀常放句末，如 aufstehen。",words:[44,45,46,47,48,49],ex:[["Ich stehe um sieben Uhr auf.","我七点起床。"],["Ich kaufe heute ein.","我今天购物。"]],oral:"按时间顺序描述一天的安排。",write:"写 5 句你的日常作息。",q:9},
+{t:"时间与日期",g:"询问和表达时间、星期与日期。",gram:"时间表达：Es ist … Uhr；时间状语可放句首，动词仍在第二位。",words:[50,51,52,53,54,55],ex:[["Es ist acht Uhr.","现在八点。"],["Heute arbeite ich.","今天我工作。"]],oral:"说出起床、学习、吃饭的时间。",write:"写一份简单的日程表。",q:10},
+{t:"饮食与点餐",g:"在咖啡馆礼貌点餐。",gram:"möchten 的变位；礼貌请求：Ich möchte …, bitte。",words:[56,57,58,59,60,61],ex:[["Ich möchte einen Kaffee, bitte.","请给我一杯咖啡。"],["Ich nehme ein Wasser.","我要一瓶水。"]],oral:"模拟服务员与顾客点餐对话。",write:"写一段 4 句点餐对话。",q:11},
+{t:"购物与第四格",g:"表达买什么、需要什么、价格多少。",gram:"Akkusativ 第四格入门：阳性 der/ein → den/einen；阴性和中性形式基本不变。",words:[62,63,64,65,66,67],ex:[["Ich kaufe einen Apfel.","我买一个苹果。"],["Das Brot ist billig.","面包很便宜。"]],oral:"模拟买面包和水果，询问价格。",write:"写五句购物句子，至少两个阳性第四格。",q:12},
+{t:"第二周复盘",g:"复习家庭、职业、日常生活、时间与购物。",gram:"检查物主冠词、可分动词、möchten 和第四格。",words:[32,33,38,44,50,56,62,64],ex:[["Ich stehe um sieben Uhr auf und kaufe Brot.","我七点起床并买面包。"]],oral:"描述一天并模拟购物。",write:"写 60 词左右的日常生活短文。",q:13},
+{t:"住房与房间",g:"介绍住所和房间。",gram:"es gibt + Akkusativ；描述房间基本结构。",words:[68,69,70,71,72,73],ex:[["Es gibt ein Schlafzimmer.","有一间卧室。"],["Meine Wohnung ist klein.","我的公寓很小。"]],oral:"介绍你理想的住所。",write:"写 5 句描述房间。",q:14},
+{t:"方位与位置",g:"描述物品在哪里。",gram:"位置介词 in/auf/unter/neben；先掌握静态位置表达。",words:[74,75,76,77,78,79],ex:[["Das Buch liegt auf dem Tisch.","书在桌子上。"],["Die Tasche ist neben dem Stuhl.","包在椅子旁边。"]],oral:"描述桌面和房间里物品的位置。",write:"写 5 句方位描述。",q:15},
+{t:"交通与出行",g:"表达乘坐交通工具和去某地。",gram:"fahren/gehen；mit + Dativ 的常见搭配。",words:[80,81,82,83,84,85],ex:[["Ich fahre mit dem Bus.","我坐公交车。"],["Wir gehen zu Fuß.","我们步行。"]],oral:"问路并介绍上班路线。",write:"写 4 句介绍通勤方式。",q:16},
+{t:"约会与能力",g:"安排见面并表达能做什么。",gram:"情态动词 können：变位动词第二位，实义动词原形放句末。",words:[86,87,88,89,90,91],ex:[["Kannst du morgen kommen?","你明天能来吗？"],["Ich kann Deutsch sprechen.","我会说德语。"]],oral:"邀请朋友周末见面，确认时间地点。",write:"写一条约朋友见面的短消息。",q:17},
+{t:"天气与季节",g:"描述天气和季节。",gram:"es 作形式主语；形容词作表语时通常不变格。",words:[92,93,94,95,96,97],ex:[["Heute ist es sonnig.","今天阳光明媚。"],["Im Winter ist es kalt.","冬天很冷。"]],oral:"描述今天和你喜欢的季节。",write:"写 4 句天气描述。",q:18},
+{t:"健康与身体",g:"描述简单身体状况和症状。",gram:"haben + 名词表达症状；Mir ist kalt 为常见表达。",words:[98,99,100,101,102,103],ex:[["Ich habe Kopfschmerzen.","我头疼。"],["Ich bin krank.","我生病了。"]],oral:"模拟向医生简单描述症状。",write:"写 4 句身体状况表达。",q:19},
+{t:"第三周复盘",g:"复习住房、方位、交通、情态动词与健康。",gram:"检查介词搭配、情态动词句框和 es 句型。",words:[68,69,74,80,86,92,98],ex:[["Ich kann morgen mit dem Bus kommen.","我明天可以坐公交车来。"]],oral:"介绍住所、通勤路线和周末计划。",write:"写 60–80 词短文：我的生活。",q:20},
+{t:"过去经历：Perfekt",g:"描述已经完成的活动。",gram:"Perfekt：haben + Partizip II；规则动词常见 ge-…-t。",words:[104,105,106,107,108,109],ex:[["Ich habe Deutsch gelernt.","我学了德语。"],["Wir haben Kaffee gekauft.","我们买了咖啡。"]],oral:"说出昨天做过的三件事。",write:"写 5 句昨天做了什么。",q:21},
+{t:"旅行与 Perfekt sein",g:"描述去过哪里、如何到达。",gram:"部分表示位置变化的动词使用 sein 作助动词，如 fahren/gehen。",words:[110,111,112,113,114,115],ex:[["Ich bin nach Berlin gefahren.","我去了柏林。"],["Wir sind spät angekommen.","我们到得很晚。"]],oral:"介绍一次旅行经历。",write:"写 5 句旅行经历。",q:22},
+{t:"比较与描述",g:"比较城市、住房和日常事物。",gram:"比较级常见形式 -er；比较结构 als。",words:[116,117,118,119,120,121],ex:[["Berlin ist größer als Bonn.","柏林比波恩大。"],["Deutsch ist schwieriger als Englisch.","德语比英语难。"]],oral:"比较两个城市或两种交通方式。",write:"写 4 句比较句。",q:23},
+{t:"邀请与计划",g:"提出邀请、表达意愿和义务。",gram:"wollen/müssen 的变位；情态动词 + 动词原形句框。",words:[122,123,124,125,126,127],ex:[["Ich will Deutsch lernen.","我想学德语。"],["Du musst heute arbeiten.","你今天必须工作。"]],oral:"邀请朋友周末活动并协商计划。",write:"写一条包含时间和活动的邀请消息。",q:24},
+{t:"邮件入门",g:"写简单的正式和非正式邮件。",gram:"邮件称呼、正文、结尾；Sie 的正式称呼。",words:[128,129,130,131,132,133],ex:[["Sehr geehrte Damen und Herren,","尊敬的女士们、先生们："],["Mit freundlichen Grüßen","此致敬礼"],["Viele Grüße","诚挚问候"]],oral:"口头说明一封邮件的目的。",write:"写一封 50–60 词的简单询问信。",q:25},
+{t:"原因与 weil 从句",g:"解释为什么学习德语、为什么做某事。",gram:"weil 引导从句，变位动词放句末；主句动词位置要正确。",words:[134,135,136,137,138,139],ex:[["Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.","我学德语，因为我想在德国工作。"],["Ich bleibe zu Hause, weil ich krank bin.","我待在家，因为我生病了。"]],oral:"用 weil 解释三个个人选择。",write:"写 5 句 weil 从句。",q:26},
+{t:"第四周复盘",g:"复习 Perfekt、比较级、邀请、邮件和 weil。",gram:"综合语序检查；动词第二位、从句末尾、句框。",words:[104,106,110,116,122,128,134,135],ex:[["Ich bin zu Hause geblieben, weil ich krank war.","我待在家，因为我生病了。"]],oral:"讲述上周经历并解释原因。",write:"写 70–80 词短文：我的学习计划。",q:27},
+{t:"A1 综合训练",g:"把自我介绍、日常生活、购物、住房、过去经历整合起来。",gram:"全阶段语法回顾与错误归类。",words:[0,7,10,26,32,44,56,68,80,104],ex:[["Ich heiße Lin. Ich komme aus China und lerne Deutsch.","我叫林，来自中国，正在学习德语。"]],oral:"完成 1 分钟自我介绍，再回答五个简单问题。",write:"写 80 词左右短文：我和我的生活。",q:28},
+{t:"A1 阶段测评与复盘",g:"检查 A1 入门基础，制定下一阶段补强清单。",gram:"综合测评：动词变位、语序、冠词、第四格、Perfekt、weil。",words:[0,3,5,7,10,14,26,32,44,56,62,68,80,86,104,110,116,128,134],ex:[["Was machst du gern?","你喜欢做什么？"],["Was hast du gestern gemacht?","你昨天做了什么？"]],oral:"完成 1 分钟自我介绍和 1 分钟日常生活描述。",write:"独立写一篇 80 词短文，检查拼写和动词位置。",q:29}
+];
+const vocab=[
+["Hallo","你好","问候"],["Guten Tag","日安","问候"],["Tschüss","再见","问候"],["ich","我","代词"],["du","你","代词"],["sein","是","动词"],["haben","有","动词"],["heißen","叫作","动词"],["kommen","来自","动词"],["wohnen","居住","动词"],["lernen","学习","动词"],["arbeiten","工作","动词"],["sprechen","说","动词"],["die Sprache","语言","名词"],["Deutsch","德语","语言"],["China","中国","专名"],["Deutschland","德国","专名"],["die Nummer","号码","名词"],["die Adresse","地址","名词"],["die E-Mail","电子邮件","名词"],["der Tag","天","名词"],["die Woche","周","名词"],["das Land","国家","名词"],["Englisch","英语","语言"],["Chinesisch","中文","语言"],["die Stadt","城市","名词"],["das Buch","书","名词"],["der Tisch","桌子","名词"],["die Tasche","包","名词"],["der Stuhl","椅子","名词"],["das Handy","手机","名词"],["der Computer","电脑","名词"],["die Familie","家庭","名词"],["die Mutter","母亲","名词"],["der Vater","父亲","名词"],["der Bruder","兄弟","名词"],["die Schwester","姐妹","名词"],["das Kind","孩子","名词"],["der Student","男学生","名词"],["die Studentin","女学生","名词"],["der Lehrer","男教师","名词"],["die Lehrerin","女教师","名词"],["der Arzt","男医生","名词"],["die Ärztin","女医生","名词"],["aufstehen","起床","可分动词"],["einkaufen","购物","可分动词"],["schlafen","睡觉","动词"],["arbeiten","工作","动词"],["frühstücken","吃早餐","动词"],["kochen","做饭","动词"],["heute","今天","副词"],["morgen","明天","副词"],["gestern","昨天","副词"],["die Uhr","钟点","名词"],["Montag","星期一","名词"],["Dienstag","星期二","名词"],["Mittwoch","星期三","名词"],["das Brot","面包","名词"],["das Wasser","水","名词"],["der Kaffee","咖啡","名词"],["der Tee","茶","名词"],["der Apfel","苹果","名词"],["die Banane","香蕉","名词"],["möchten","想要","动词"],["nehmen","拿/要","动词"],["kaufen","购买","动词"],["kosten","价值/花费","动词"],["teuer","贵的","形容词"],["billig","便宜的","形容词"],["die Wohnung","公寓","名词"],["das Zimmer","房间","名词"],["die Küche","厨房","名词"],["das Bad","浴室","名词"],["das Schlafzimmer","卧室","名词"],["das Wohnzimmer","客厅","名词"],["auf","在……上","介词"],["unter","在……下","介词"],["neben","在……旁边","介词"],["in","在……里面","介词"],["der Bus","公交车","名词"],["der Zug","火车","名词"],["das Fahrrad","自行车","名词"],["zu Fuß","步行","短语"],["fahren","乘车/开车","动词"],["gehen","走","动词"],["können","能够","情态动词"],["treffen","见面","动词"],["morgen","明天","副词"],["zusammen","一起","副词"],["wollen","想要","情态动词"],["müssen","必须","情态动词"],["warm","暖和的","形容词"],["kalt","冷的","形容词"],["sonnig","晴朗的","形容词"],["regnen","下雨","动词"],["krank","生病的","形容词"],["gesund","健康的","形容词"],["der Kopf","头","名词"],["der Bauch","肚子","名词"],["die Schmerzen","疼痛","名词"],["gemacht","做了","分词"],["gelernt","学习了","分词"],["gekauft","买了","分词"],["gefahren","乘车去了","分词"],["gegangen","走了/去了","分词"],["angekommen","到达了","分词"],["größer","更大的","比较级"],["kleiner","更小的","比较级"],["besser","更好的","比较级"],["schlechter","更差的","比较级"],["der Termin","预约/约定","名词"],["die Nachricht","消息","名词"],["die Einladung","邀请","名词"],["freundlich","友好的","形容词"],["die E-Mail","邮件","名词"],["Sehr geehrte","尊敬的","邮件用语"],["Mit freundlichen Grüßen","此致敬礼","邮件用语"],["weil","因为","连词"],["deshalb","因此","副词"],["aber","但是","连词"],["und","和","连词"],["oder","或者","连词"],["denn","因为","连词"],["die Arbeit","工作","名词"],["der Beruf","职业","名词"],["der Alltag","日常生活","名词"],["die Reise","旅行","名词"],["das Wochenende","周末","名词"]
+];
+const tests=[
+[["sein 的 ich 形式是？",["bin","bist","ist"],0,"ich bin；du bist；er/sie ist。"],["“我学习德语”是？",["Ich Deutsch lerne.","Ich lerne Deutsch.","Lerne ich Deutsch."],1,"陈述句中变位动词通常在第二位。"]],
+[["“我来自中国”是？",["Ich komme aus China.","Ich bin komme China.","Ich wohne aus China."],0,"kommen aus 表示来自。"],["“你叫什么名字？”是？",["Wie du heißt?","Wie heißt du?","Wie heißen du?"],1,"疑问词 + 变位动词 + 主语。"]],
+[["lernen 的 du 形式是？",["lerne","lernst","lernt"],1,"规则动词 du 通常加 -st。"],["正确语序是？",["Ich Deutsch lerne.","Ich lerne Deutsch.","Lerne Deutsch ich."],1,"主句变位动词第二位。"]],
+[["“你住在哪里？”是？",["Wo wohnst du?","Wo du wohnst?","Wo wohnen du?"],0,"疑问词问句中变位动词紧跟疑问词。"],["“你来自中国吗？”是？",["Du kommst aus China?","Kommst du aus China?","Kommen du aus China?"],1,"是非问句动词在句首。"]],
+[["“我说中文”是？",["Ich spreche Chinesisch.","Ich sprechen Chinesisch.","Ich sprichst Chinesisch."],0,"ich spreche。"],["kommen aus 后面表达？",["来源地","职业","时间"],0,"kommen aus + 地点/国家。"]],
+[["Buch 的冠词是？",["der","die","das"],2,"das Buch 是中性名词。"],["“这是一个包”是？",["Das ist eine Tasche.","Das ist ein Tasche.","Das ist der Tasche."],0,"Tasche 是阴性：eine Tasche。"]],
+[["“她是”是？",["sie bin","sie bist","sie ist"],2,"sein：sie ist。"],["德语名词通常如何书写？",["首字母大写","全部小写","全部大写"],0,"所有名词首字母大写。"]],
+[["“我的妈妈”是？",["mein Mutter","meine Mutter","meinen Mutter"],1,"阴性名词前 mein 变 meine。"],["“我的父亲”是？",["meine Vater","mein Vater","meinen Vater"],1,"阳性主格 mein Vater。"]],
+[["“我是学生”是？",["Ich bin Student.","Ich habe Student.","Ich Student bin."],0,"职业作表语通常不加冠词。"],["“她是女医生”是？",["Sie ist Arzt.","Sie ist Ärztin.","Sie sind Ärztin."],1,"Ärztin 是女医生。"]],
+[["aufstehen 的句子正确的是？",["Ich stehe um sieben Uhr auf.","Ich aufstehe um sieben Uhr.","Ich stehe auf um sieben Uhr."],0,"可分前缀放句末。"],["“我今天购物”是？",["Ich kaufe heute ein.","Ich einkaufe heute.","Ich kaufe ein heute."],0,"einkaufen 在主句中分开。"]],
+[["“现在八点”是？",["Es ist acht Uhr.","Es acht ist Uhr.","Ist es acht Uhr."],0,"Es ist … Uhr。"],["时间放句首时正确语序？",["Heute ich arbeite.","Heute arbeite ich.","Heute arbeiten ich."],1,"时间占第一位，动词仍第二位。"]],
+[["“我想要一杯咖啡”是？",["Ich möchte einen Kaffee.","Ich möchten ein Kaffee.","Ich möchte eine Kaffee."],0,"möchten 的 ich 形式；Kaffee 阳性第四格 einen。"],["möchten 的 ich 形式是？",["möchtest","möchte","möchten"],1,"ich möchte。"]],
+[["阳性定冠词第四格是？",["der","den","dem"],1,"阳性 Akkusativ：der → den。"],["“我买一个苹果”是？",["Ich kaufe einen Apfel.","Ich kaufe ein Apfel.","Ich kaufen einen Apfel."],0,"Apfel 阳性，第四格 einen Apfel。"]],
+[["“我起床”是？",["Ich stehe auf.","Ich aufstehe.","Ich stehst auf."],0,"ich stehe … auf。"],["“我买一个面包”是？",["Ich kaufe ein Brot.","Ich kaufe einen Brot.","Ich kaufen Brot."],0,"Brot 中性，第四格 ein Brot。"]],
+[["“有一间卧室”是？",["Es gibt ein Schlafzimmer.","Es gibt einen Schlafzimmer.","Es ist gibt Schlafzimmer."],0,"Schlafzimmer 中性，es gibt 后用第四格。"],["Wohnung 的冠词是？",["der","die","das"],1,"die Wohnung。"]],
+[["“在桌子上”是？",["auf dem Tisch","auf den Tisch","auf der Tisch"],0,"静态位置 auf + Dativ；der Tisch → dem Tisch。"],["“在椅子旁边”是？",["neben dem Stuhl","neben den Stuhl","neben der Stuhl"],0,"静态位置 Dativ。"]],
+[["“我坐公交车”是？",["Ich fahre mit dem Bus.","Ich fahre mit den Bus.","Ich mit Bus fahre."],0,"mit + Dativ；der Bus → dem Bus。"],["“步行”是？",["mit Fuß","zu Fuß","auf Fuß"],1,"固定表达 zu Fuß。"]],
+[["können 的 ich 形式是？",["kann","kannst","können"],0,"ich kann。"],["情态动词句中实义动词放？",["句首","第二位","句末原形"],2,"Ich kann Deutsch sprechen。"]],
+[["“今天很晴朗”是？",["Heute ist es sonnig.","Heute sonnig es ist.","Heute es sonnig ist."],0,"变位动词第二位。"],["“冷”是？",["warm","kalt","gesund"],1,"kalt = 冷。"]],
+[["“我头疼”是？",["Ich habe Kopfschmerzen.","Ich bin Kopfschmerzen.","Ich habe Kopf krank."],0,"haben + Kopfschmerzen。"],["“我生病了”是？",["Ich bin krank.","Ich habe krank.","Ich krank bin."],0,"sein + 形容词。"]],
+[["“我能明天来”是？",["Ich kann morgen kommen.","Ich kann kommen morgen.","Ich kommen kann morgen."],0,"情态动词第二位，原形句末。"],["mit 后常用？",["Dativ","Nominativ","只有 Akkusativ"],0,"mit 支配第三格。"]],
+[["Perfekt 常见结构是？",["haben/sein + Partizip II","werden + Infinitiv","sein + Präsens"],0,"完成时由助动词和第二分词构成。"],["“我学了德语”是？",["Ich habe Deutsch gelernt.","Ich bin Deutsch lernen.","Ich gelernt Deutsch habe."],0,"lernen 的分词是 gelernt。"]],
+[["“我去了柏林”是？",["Ich habe nach Berlin gefahren.","Ich bin nach Berlin gefahren.","Ich bin nach Berlin fahren."],1,"fahren 表示位置变化时常用 sein。"],["fahren 的 Partizip II 是？",["gefahrt","gefahren","gefahrtet"],1,"fahren → gefahren。"]],
+[["“更大”是？",["großest","größer","groß"],1,"groß → größer。"],["比较“比”常用？",["als","weil","mit"],0,"比较级 + als。"]],
+[["“我必须工作”是？",["Ich muss arbeiten.","Ich müssen arbeiten.","Ich muss arbeite."],0,"ich muss + 动词原形。"],["wollen 的 ich 形式是？",["will","willst","wollen"],0,"ich will。"]],
+[["正式邮件常见开头是？",["Hallo Leute","Sehr geehrte Damen und Herren","Tschüss"],1,"正式邮件可用 Sehr geehrte Damen und Herren。"],["正式邮件结尾是？",["Mit freundlichen Grüßen","Gute Nacht","Bis bald"],0,"正式邮件常用结尾。"]],
+[["weil 从句的变位动词通常放？",["句首","第二位","句末"],2,"weil 从句动词后置。"],["正确句子是？",["..., weil ich Deutsch lerne.","..., weil ich lerne Deutsch.","..., weil lerne ich Deutsch."],0,"weil ich Deutsch lerne。"]],
+[["“我学德语，因为我想在德国工作”正确的是？",["Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.","Ich lerne Deutsch, weil möchte ich arbeiten.","Ich lerne Deutsch, weil ich möchte arbeiten."],0,"weil 从句变位情态动词 möchte 放句末。"],["“昨天”是？",["heute","gestern","morgen"],1,"gestern = 昨天。"]],
+[["Perfekt 的规则动词 gelernt 来自？",["lernen","gehen","sein"],0,"lernen → gelernt。"],["名词首字母应？",["大写","小写","看情况"],0,"德语名词首字母大写。"]]
+];
+let S=JSON.parse(localStorage.getItem("dw2")||"{}");S.done=S.done||{};S.words=S.words||{};S.notes=S.notes||{};S.writes=S.writes||{};S.scores=S.scores||[];S.start=S.start||new Date().toISOString().slice(0,10);
+let selected=1,wordIndex=null,flipped=false;
+function persist(){localStorage.setItem("dw2",JSON.stringify(S));renderDash()}
+function dayNow(){return Math.max(1,Math.min(30,Math.floor((Date.now()-new Date(S.start+"T00:00:00").getTime())/86400000)+1))}
+function go(p){document.querySelectorAll(".page").forEach(x=>x.classList.add("hide"));document.getElementById(p).classList.remove("hide");document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("active",x.dataset.page===p));if(p==="course")renderCourse();if(p==="vocab")renderVocab();if(p==="practice")renderPractice();if(p==="exam")renderExam();if(p==="roadmap")renderStages();if(p==="data")document.getElementById("startDate").value=S.start}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>go(b.dataset.page));
+function renderDash(){let done=Object.keys(S.done).filter(k=>S.done[k]).length;document.getElementById("completed").textContent=Object.keys(S.done).filter(k=>S.done[k+"_passed"]).length+" / 30";document.getElementById("wordCount").textContent=Object.keys(S.words).length;document.getElementById("average").textContent=S.scores.length?Math.round(S.scores.reduce((a,b)=>a+b,0)/S.scores.length)+"%":"—";let d=dayNow(),n=Object.keys(S.done).filter(k=>k.startsWith(d+"-")&&S.done[k]).length;document.getElementById("dayBadge").textContent="第 "+d+" 天";document.getElementById("todayTitle").textContent=lessons[d-1].t;document.getElementById("todayProgress").style.width=(n/6*100)+"%";document.getElementById("todayPct").textContent=n+" / 6 项任务完成";document.getElementById("level").textContent="当前阶段：A1"}
+function renderCourse(){let d=selected;let L=lessons[d-1];document.getElementById("daySelect").innerHTML=lessons.map((x,i)=>`<option value="${i+1}" ${i+1===d?"selected":""}>第 ${i+1} 天 · ${x.t}</option>`).join("");document.getElementById("lessonHeading").textContent=`第 ${d} 天｜${L.t}`;document.getElementById("lessonGoal").textContent=L.g;document.getElementById("lessonContent").innerHTML=`<h3>一、今日语法</h3><p>${L.gram}</p><h3>二、核心例句</h3>${L.ex.map(e=>`<div class="example"><div class="de">${e[0]}</div><div class="translation">${e[1]}</div><button onclick="sayText(${JSON.stringify(e[0])})">🔊 听发音</button></div>`).join("")}<h3>三、今日词汇</h3><p class="muted">先学习词义，再进入单词卡进行主动回忆。每个名词连冠词一起记。</p><div class="row">${L.words.map(i=>`<span class="tag">${vocab[i][0]}</span>`).join("")}</div><h3>四、学习方法</h3><ol><li>朗读例句，听发音并模仿。</li><li>遮住中文，主动回忆每个词的意思。</li><li>根据语法规则自己造 5 个句子。</li><li>完成听说读写任务并记录错误。</li></ol>`;let tasks=["词汇 20 分钟：记住本课核心词，名词带冠词。","语法 25 分钟：理解规则，抄写例句并独立造句。","听力 25 分钟：先听不看文字，再看文本核对，最后跟读。","阅读 20 分钟：读例句或对应 A1 对话，标记动词位置。","口语 15 分钟：完成本课口语提示，录音并回听。","写作 15 分钟：完成本课写作提示，检查拼写与语序。"];document.getElementById("dailyTasks").innerHTML=tasks.map((t,i)=>`<div class="task ${S.done[d+"-"+i]?"done":""}"><input type="checkbox" ${S.done[d+"-"+i]?"checked":""} onchange="toggle(${d},${i},this.checked)"><div class="taskbody">${t}</div></div>`).join("");document.getElementById("taskCount").textContent=tasks.filter((x,i)=>S.done[d+"-"+i]).length+"/6 完成";document.getElementById("lessonFeedback").textContent=S.done[d+"_passed"]?"本课已完成并记录。":"";document.getElementById("notes").value=S.notes[d]||""}
+function selectDay(v){selected=+v;renderCourse()}
+function toggle(d,i,v){S.done[d+"-"+i]=v;persist();renderCourse()}
+function completeLesson(){let n=Array.from({length:6},(_,i)=>S.done[selected+"-"+i]).filter(Boolean).length;if(n<6){document.getElementById("lessonFeedback").textContent="还有任务未完成。请完成六项训练后再提交。";return}S.done[selected+"_passed"]=true;persist();document.getElementById("lessonFeedback").textContent="今日课程完成！请在明天继续前复习到期单词。"}
+function saveNote(){S.notes[selected]=document.getElementById("notes").value;persist();document.getElementById("noteMsg").textContent="已保存。"}
+function due(){return vocab.map((v,i)=>({v,i,w:S.words[i]})).filter(x=>!x.w||!x.w.next||x.w.next<=Date.now())}
+function renderVocab(){let ds=due();wordIndex=ds.length?ds[0].i:null;flipped=false;document.getElementById("flash").innerHTML=wordIndex===null?"<p>今天没有到期单词。可以继续浏览词库，或回到课程学习新词。</p>":`<div class="wordcard"><small>${vocab[wordIndex][2]}</small><div class="de">${vocab[wordIndex][0]}</div><div id="wordBack" class="hide"><b>${vocab[wordIndex][1]}</b><p class="muted">请自己造一个包含该词的句子。</p></div></div><small>今天到期 ${ds.length} 个单词</small>`;document.getElementById("vocabStatus").textContent="";document.getElementById("wordTable").innerHTML="<table><tr><th>德语</th><th>中文</th><th>类别</th><th>状态</th></tr>"+vocab.map((v,i)=>`<tr><td>${v[0]}</td><td>${v[1]}</td><td>${v[2]}</td><td>${S.words[i]?"学习中":"新词"}</td></tr>`).join("")+"</table>"}
+function flip(){if(wordIndex===null)return;document.getElementById("wordBack").classList.remove("hide");flipped=true}
+function grade(known){if(wordIndex===null||!flipped){document.getElementById("vocabStatus").textContent="先显示答案，再进行自评。";return}let old=S.words[wordIndex]||{interval:0};let it=known?([0,1,3,7,14,30][Math.min(5,([0,1,3,7,14,30].indexOf(old.interval)+1))]||1):1;S.words[wordIndex]={interval:it,next:Date.now()+it*86400000};persist();renderVocab()}
+function activeLesson(){return lessons[dayNow()-1]}
+function renderPractice(){let L=activeLesson();let sentence=L.ex[0][0];document.getElementById("audioText").innerHTML=`<div class="de">${sentence}</div><div class="translation">${L.ex[0][1]}</div>`;document.getElementById("transcript").innerHTML=L.ex.map(x=>`<p><b>${x[0]}</b> — ${x[1]}</p>`).join("");document.getElementById("oralPrompt").textContent=L.oral;document.getElementById("writePrompt").textContent=L.write;document.getElementById("writing").value=S.writes[dayNow()]||""}
+function sayText(t,rate=0.85){if(!("speechSynthesis"in window)){alert("当前浏览器不支持语音合成，请使用设备朗读功能。");return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang="de-DE";u.rate=rate;speechSynthesis.speak(u)}
+function speak(){sayText(activeLesson().ex.map(x=>x[0]).join(". "))}
+function speakSlow(){sayText(activeLesson().ex.map(x=>x[0]).join(". "),0.65)}
+function showTranscript(){document.getElementById("transcript").classList.toggle("hide")}
+function norm(s){return s.toLowerCase().trim().replace(/[.,!?;:]/g,"").replace(/\s+/g," ")}
+function checkDictation(){let target=norm(activeLesson().ex[0][0]),got=norm(document.getElementById("dictation").value);document.getElementById("dictationResult").textContent=got===target?"完全匹配！请再听一次，检查发音和节奏。":"与目标句不完全一致。打开文本核对拼写、词序和大小写，再重试。"}
+function saveWriting(){S.writes[dayNow()]=document.getElementById("writing").value;persist();document.getElementById("writingMsg").textContent="写作已保存在本机。"}
+function renderExam(){document.getElementById("examQuestions").innerHTML=tests.map((day,i)=>{let q=day[0];return `<div class="q"><b>${i+1}. ${q[0]}</b>${q[1].map((a,j)=>`<label><input type="radio" name="e${i}" value="${j}"> ${a}</label>`).join("")}<div id="ef${i}" class="feedback"></div></div>`}).join("");document.getElementById("examScore").textContent=""}
+function submitExam(){let score=0;tests.forEach((day,i)=>{let q=day[0],a=document.querySelector(`input[name=e${i}]:checked`),ok=a&&+a.value===q[2];if(ok)score++;document.getElementById("ef"+i).innerHTML=`<span class="${ok?"ok":"bad"}">${ok?"正确":"需要复习"}</span>：${q[3]}`});let pct=Math.round(score/tests.length*100);S.scores.push(pct);persist();document.getElementById("examScore").textContent=`本次得分 ${score}/${tests.length}（${pct}%）。${pct>=80?"达到本次练习目标；仍需进行外部听说读写检查。":pct>=70?"基础尚可，请按错题解释复习后重测。":"建议回到相应课程复习，不要急于升级。"} `}
+function renderStages(){let s=[["A1","约 2–3 个月或更长","基础沟通","发音、基础句型、现在时、冠词、第四格、日常生活、Perfekt 入门。"],["A2","约 3–4 个月或更长","熟悉场景独立沟通","过去经历、反身动词、介词、比较级、从句、邮件、预约与旅行。"],["B1","约 4–6 个月或更长","独立使用语言","复杂从句、被动态入门、间接问句、关系从句、工作与社会主题、论证写作。"],["B2","约 6 个月或更长","复杂主题与职场沟通","被动态、虚拟式、名词化、正式表达、长篇听读、观点论证、考试专项训练。"]];document.getElementById("stages").innerHTML=s.map(x=>`<div class="lesson"><div class="row between"><h3>${x[0]}｜${x[2]}</h3><span class="tag">${x[1]}</span></div><p>${x[3]}</p></div>`).join("")}
+function saveStart(){let x=document.getElementById("startDate").value;if(x){S.start=x;persist();document.getElementById("dataMsg").textContent="开始日期已保存。"}}
+function exportData(){let b=new Blob([JSON.stringify(S,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="Deutsch-Weg-2-backup.json";a.click();URL.revokeObjectURL(a.href)}
+function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{S=JSON.parse(r.result);persist();document.getElementById("dataMsg").textContent="备份导入成功。"}catch{document.getElementById("dataMsg").textContent="文件格式不正确。"}};r.readAsText(f)}
+function resetAll(){if(confirm("确定清空所有学习记录吗？请先导出备份。")){localStorage.removeItem("dw2");location.reload()}}
+renderDash();renderStages();selected=dayNow();
+</script>
+<script>
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(err => console.warn("离线缓存注册失败", err));
+  });
+}
+</script>
+
+</body></html>
