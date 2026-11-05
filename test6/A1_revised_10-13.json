@@ -1,0 +1,623 @@
+[
+  {
+    "id": 10,
+    "level": "A1",
+    "day": 10,
+    "title": "Datum und Uhrzeit：日期、星期与时间",
+    "goal": "说出星期、月份、日期和钟点，并约定简单见面时间。",
+    "grammar": "am + 星期/日期；um + 钟点；im + 月份/季节",
+    "vocab": [
+      [
+        "der Montag",
+        "星期一",
+        "名词·阳性·复数：die Montage"
+      ],
+      [
+        "der Dienstag",
+        "星期二",
+        "名词·阳性·复数：die Dienstage"
+      ],
+      [
+        "der Mittwoch",
+        "星期三",
+        "名词·阳性·复数：die Mittwoche"
+      ],
+      [
+        "der Donnerstag",
+        "星期四",
+        "名词·阳性·复数：die Donnerstage"
+      ],
+      [
+        "der Freitag",
+        "星期五",
+        "名词·阳性·复数：die Freitage"
+      ],
+      [
+        "der Samstag",
+        "星期六",
+        "名词·阳性·复数：die Samstage"
+      ],
+      [
+        "der Sonntag",
+        "星期日",
+        "名词·阳性·复数：die Sonntage"
+      ],
+      [
+        "der Januar",
+        "一月",
+        "名词·阳性"
+      ],
+      [
+        "der Februar",
+        "二月",
+        "名词·阳性"
+      ],
+      [
+        "die Uhr",
+        "钟；点钟",
+        "名词·阴性·复数：die Uhren"
+      ],
+      [
+        "heute",
+        "今天",
+        "副词"
+      ],
+      [
+        "morgen",
+        "明天；早晨",
+        "副词/名词"
+      ],
+      [
+        "am",
+        "在某一天",
+        "介词缩合形式"
+      ],
+      [
+        "um",
+        "在某个钟点",
+        "介词"
+      ],
+      [
+        "im",
+        "在某个月/季节",
+        "介词缩合形式"
+      ]
+    ],
+    "vocab_ipa": [
+      "/ˈmoːntaːk/",
+      "/ˈdiːnstaːk/",
+      "/ˈmɪtvɔx/",
+      "/ˈdɔnɐstaːk/",
+      "/ˈfʁaɪtaːk/",
+      "/ˈzamstaːk/",
+      "/ˈzɔntaːk/",
+      "/ˈjanuaːɐ̯/",
+      "/ˈfeːbʁuaːɐ̯/",
+      "/uːɐ̯/",
+      "/ˈhɔʏtə/",
+      "/ˈmɔʁɡn̩/",
+      "/am/",
+      "/ʊm/",
+      "/ɪm/"
+    ],
+    "examples": [
+      [
+        "Heute ist Donnerstag.",
+        "今天是星期四。"
+      ],
+      [
+        "Wir treffen uns am Freitag.",
+        "我们星期五见面。"
+      ],
+      [
+        "Der Termin ist um zehn Uhr.",
+        "预约时间是十点。"
+      ],
+      [
+        "Ich habe im Mai Urlaub.",
+        "我五月休假。"
+      ]
+    ],
+    "examples_ipa": [
+      "/ˈhɔʏtə ɪst ˈdɔnɐstaːk/",
+      "/viːɐ̯ ˈtʁɛfn̩ ʊns am ˈfʁaɪtaːk/",
+      "/deːɐ̯ tɛɐ̯ˈmiːn ɪst ʊm tseːn uːɐ̯/",
+      "/ɪç ˈhaːbə ɪm maɪ̯ ˈuːɐ̯laʊ̯p/"
+    ],
+    "dialogue": [
+      [
+        "Wann hast du Zeit?",
+        "你什么时候有空？"
+      ],
+      [
+        "Am Samstag um halb zehn.",
+        "星期六九点半。"
+      ],
+      [
+        "Gut, bis dann!",
+        "好，到时候见！"
+      ]
+    ],
+    "dialogue_ipa": [
+      "/van hast duː tsaɪ̯t/",
+      "/am ˈzamstaːk ʊm halp tseːn/",
+      "/ɡuːt bɪs dan/"
+    ],
+    "teaching": "日期和时间在德国生活中经常用于预约医生、安排工作和约朋友。先把星期、月份当作名词记忆：德语星期和月份名称通常是阳性。今天是星期几可以说 Heute ist Montag.；约在星期一可以说 am Montag。",
+    "grammar_detail": "am 用于星期或具体日期，例如 am Montag（星期一）、am fünften Mai（五月五日）；um 用于钟点，例如 um acht Uhr（八点）；im 用于月份或季节，例如 im Juni（六月）、im Winter（冬天）。halb neun 表示八点半，不是九点半：德语把它理解为“到九点还差半小时”。",
+    "pronunciation_note": "Wochentag 指星期中的一天；Werktag 通常指工作日。Samstag 在部分地区也叫 Sonnabend。数字序数词在日期表达中常带词尾变化，先整体学习 am ersten Mai、am fünften Mai。",
+    "oral": "说出今天星期几、现在几点，并邀请朋友在某天某时见面。",
+    "writing": "写三句：今天的日期、一个预约时间、一次周末安排。"
+  },
+  {
+    "id": 11,
+    "level": "A1",
+    "day": 11,
+    "title": "Mein Alltag：我的日常生活",
+    "goal": "描述起床、洗漱、学习、工作和休息等日常活动。",
+    "grammar": "规则动词现在时；可分动词；反身表达初识",
+    "vocab": [
+      [
+        "aufstehen",
+        "起床",
+        "可分动词"
+      ],
+      [
+        "aufwachen",
+        "醒来",
+        "可分动词"
+      ],
+      [
+        "duschen",
+        "淋浴",
+        "动词"
+      ],
+      [
+        "sich waschen",
+        "洗漱；洗自己",
+        "反身表达"
+      ],
+      [
+        "sich anziehen",
+        "穿衣服",
+        "反身表达/可分动词"
+      ],
+      [
+        "frühstücken",
+        "吃早餐",
+        "动词"
+      ],
+      [
+        "arbeiten",
+        "工作",
+        "动词"
+      ],
+      [
+        "lernen",
+        "学习",
+        "动词"
+      ],
+      [
+        "einkaufen",
+        "购物",
+        "可分动词"
+      ],
+      [
+        "kochen",
+        "做饭",
+        "动词"
+      ],
+      [
+        "aufräumen",
+        "整理",
+        "可分动词"
+      ],
+      [
+        "fernsehen",
+        "看电视",
+        "可分动词"
+      ],
+      [
+        "schlafen",
+        "睡觉",
+        "不规则动词"
+      ]
+    ],
+    "vocab_ipa": [
+      "/ˈaʊ̯fˌʃteːən/",
+      "/ˈaʊ̯fˌvaxn̩/",
+      "/ˈdʊʃn̩/",
+      "/zɪç ˈvaʃn̩/",
+      "/zɪç ˈantsiːən/",
+      "/ˈfʁyːʃtʏkn̩/",
+      "/ˈaʁbaɪ̯tn̩/",
+      "/ˈlɛʁnən/",
+      "/ˈaɪ̯nˌkaʊ̯fn̩/",
+      "/ˈkɔxn̩/",
+      "/ˈaʊ̯fˌʁɔʏ̯mən/",
+      "/ˈfɛʁnˌzeːən/",
+      "/ˈʃlaːfn̩/"
+    ],
+    "examples": [
+      [
+        "Ich stehe um sieben Uhr auf.",
+        "我七点起床。"
+      ],
+      [
+        "Danach dusche ich.",
+        "之后我洗澡。"
+      ],
+      [
+        "Am Abend lerne ich Deutsch.",
+        "晚上我学习德语。"
+      ],
+      [
+        "Ich gehe um elf Uhr schlafen.",
+        "我十一点睡觉。"
+      ]
+    ],
+    "examples_ipa": [
+      "/ɪç ˈʃteːə ʊm ˈziːbn̩ uːɐ̯ aʊ̯f/",
+      "/daˈnaːx ˈdʊʃə ɪç/",
+      "/am ˈaːbn̩t ˈlɛʁnə ɪç dɔʏ̯tʃ/",
+      "/ɪç ˈɡeːə ʊm ɛlf uːɐ̯ ˈʃlaːfn̩/"
+    ],
+    "dialogue": [
+      [
+        "Wann stehst du auf?",
+        "你几点起床？"
+      ],
+      [
+        "Ich stehe um sieben Uhr auf.",
+        "我七点起床。"
+      ],
+      [
+        "Was machst du am Abend?",
+        "你晚上做什么？"
+      ],
+      [
+        "Ich lerne Deutsch und gehe dann schlafen.",
+        "我学习德语，然后睡觉。"
+      ]
+    ],
+    "dialogue_ipa": [
+      "/van ʃteːst duː aʊ̯f/",
+      "/ɪç ˈʃteːə ʊm ˈziːbn̩ uːɐ̯ aʊ̯f/",
+      "/vas maxst duː am ˈaːbn̩t/",
+      "/ɪç ˈlɛʁnə dɔʏ̯tʃ ʊnt ˈɡeːə dan ˈʃlaːfn̩/"
+    ],
+    "teaching": "描述每天做什么时，常用现在时。可分动词由前缀和动词主体组成，例如 aufstehen。主句中，变位动词在第二位，前缀移到句尾：Ich stehe früh auf.。如果前面有 möchte 等情态动词，动词原形留在句尾：Ich möchte früh aufstehen。",
+    "grammar_detail": "反身表达表示动作回到动作执行者自己身上。比如 sich waschen 是“洗自己/洗漱”。ich 对应 mich：Ich wasche mich.；du 对应 dich：Du wäschst dich.。可分动词在普通主句中拆开；在 möchten + 动词原形结构中不拆开。",
+    "pronunciation_note": "aufstehen 的重音在前缀 auf；waschen 的 du 形式是 wäschst，注意 ä 的发音。句子朗读时，句尾可分前缀要清楚，不要漏读。",
+    "oral": "按时间顺序说出自己一天中的五项活动。",
+    "writing": "写一段五句短文，描述从起床到睡觉的一天。"
+  },
+  {
+    "id": 12,
+    "level": "A1",
+    "day": 12,
+    "title": "Essen und Trinken：食物、饮料与餐厅点餐",
+    "goal": "说出常见食物饮料，在餐厅礼貌点餐。",
+    "grammar": "möchten；第四格入门；nehmen 的不规则变化；kein/nicht 初识",
+    "vocab": [
+      [
+        "das Brot",
+        "面包",
+        "名词·中性·复数：die Brote"
+      ],
+      [
+        "das Brötchen",
+        "小面包",
+        "名词·中性·复数：die Brötchen"
+      ],
+      [
+        "der Reis",
+        "米饭；米",
+        "名词·阳性"
+      ],
+      [
+        "die Kartoffel",
+        "土豆",
+        "名词·阴性·复数：die Kartoffeln"
+      ],
+      [
+        "die Nudel",
+        "面条",
+        "名词·阴性·复数：die Nudeln"
+      ],
+      [
+        "die Pizza",
+        "披萨",
+        "名词·阴性·复数：die Pizzen"
+      ],
+      [
+        "die Suppe",
+        "汤",
+        "名词·阴性·复数：die Suppen"
+      ],
+      [
+        "der Salat",
+        "沙拉",
+        "名词·阳性·复数：die Salate"
+      ],
+      [
+        "das Fleisch",
+        "肉",
+        "名词·中性"
+      ],
+      [
+        "der Fisch",
+        "鱼",
+        "名词·阳性·复数：die Fische"
+      ],
+      [
+        "das Ei",
+        "鸡蛋",
+        "名词·中性·复数：die Eier"
+      ],
+      [
+        "der Käse",
+        "奶酪",
+        "名词·阳性"
+      ],
+      [
+        "das Wasser",
+        "水",
+        "名词·中性"
+      ],
+      [
+        "der Kaffee",
+        "咖啡",
+        "名词·阳性"
+      ],
+      [
+        "der Tee",
+        "茶",
+        "名词·阳性"
+      ],
+      [
+        "die Milch",
+        "牛奶",
+        "名词·阴性"
+      ],
+      [
+        "der Saft",
+        "果汁",
+        "名词·阳性"
+      ],
+      [
+        "die Rechnung",
+        "账单",
+        "名词·阴性·复数：die Rechnungen"
+      ]
+    ],
+    "vocab_ipa": [
+      "/bʁoːt/",
+      "/ˈbʁøːtçən/",
+      "/ʁaɪ̯s/",
+      "/kaʁˈtɔfl̩/",
+      "/ˈnuːdl̩/",
+      "/ˈpɪtsa/",
+      "/ˈzʊpə/",
+      "/zaˈlaːt/",
+      "/flaɪ̯ʃ/",
+      "/fɪʃ/",
+      "/aɪ̯/",
+      "/ˈkɛːzə/",
+      "/ˈvasɐ/",
+      "/kaˈfeː/",
+      "/teː/",
+      "/mɪlç/",
+      "/zaft/",
+      "/ˈʁɛçnʊŋ/"
+    ],
+    "examples": [
+      [
+        "Ich möchte einen Kaffee.",
+        "我想要一杯咖啡。"
+      ],
+      [
+        "Ich möchte eine Suppe essen.",
+        "我想喝/吃一份汤。"
+      ],
+      [
+        "Ich nehme den Salat.",
+        "我点这份沙拉。"
+      ],
+      [
+        "Ich möchte keine Milch.",
+        "我不想要牛奶。"
+      ]
+    ],
+    "examples_ipa": [
+      "/ɪç ˈmœçtə ˈaɪ̯nən kaˈfeː/",
+      "/ɪç ˈmœçtə ˈaɪ̯nə ˈzʊpə ˈɛsn̩/",
+      "/ɪç ˈneːmə deːn zaˈlaːt/",
+      "/ɪç ˈmœçtə ˈkaɪ̯nə mɪlç/"
+    ],
+    "dialogue": [
+      [
+        "Guten Abend! Was möchten Sie bestellen?",
+        "晚上好！您想点些什么？"
+      ],
+      [
+        "Ich möchte eine Suppe und einen Salat, bitte.",
+        "我想要一份汤和一份沙拉。"
+      ],
+      [
+        "Ein stilles Wasser, bitte.",
+        "请给我一瓶无气泡水。"
+      ],
+      [
+        "Die Rechnung, bitte.",
+        "请给我账单。"
+      ]
+    ],
+    "dialogue_ipa": [
+      "/ˈɡuːtn̩ ˈaːbn̩t vas ˈmœçtn̩ ziː bəˈʃtɛlən/",
+      "/ɪç ˈmœçtə ˈaɪ̯nə ˈzʊpə ʊnt ˈaɪ̯nən zaˈlaːt ˈbɪtə/",
+      "/aɪ̯n ˈʃtɪləs ˈvasɐ ˈbɪtə/",
+      "/diː ˈʁɛçnʊŋ ˈbɪtə/"
+    ],
+    "teaching": "在餐厅表达需求时，möchten 比直接命令更礼貌。Ich möchte … 意思是“我想要……”。它后面可以接名词，也可以接另一个动词原形；当接动词原形时，动词原形通常放在句尾。",
+    "grammar_detail": "Akkusativ（第四格）是德语用来标记许多直接承受动作的对象的形式。问“谁做动作、动作作用于什么？”例如 Ich esse einen Apfel.（我吃一个苹果。）Apfel 是被吃的东西。阳性冠词变化明显：der→den，ein→einen；阴性 die/eine 和中性 das/ein 在本例中形式不变。nehmen 的常见变化是 ich nehme、du nimmst、er nimmt。kein 通常否定名词，nicht 常否定动作或形容词。",
+    "pronunciation_note": "möchten 中的 ö 是圆唇前元音 [œ]；Milch 末尾 ch 是 [ç]。IPA表示标准发音目标，不等于真人录音。",
+    "oral": "模拟点餐：点一份主食、一杯饮料，并礼貌索要账单。",
+    "writing": "写一段四轮点餐对话，至少使用 möchten、einen/eine/ein 和 bitte。"
+  },
+  {
+    "id": 13,
+    "level": "A1",
+    "day": 13,
+    "title": "Einkaufen：超市购物与价格",
+    "goal": "在超市询问商品、价格、数量，并完成付款。",
+    "grammar": "Wie viel kostet…?；haben；brauchen；kein 的变化",
+    "vocab": [
+      [
+        "der Supermarkt",
+        "超市",
+        "名词·阳性·复数：die Supermärkte"
+      ],
+      [
+        "das Geschäft",
+        "商店",
+        "名词·中性·复数：die Geschäfte"
+      ],
+      [
+        "der Preis",
+        "价格",
+        "名词·阳性·复数：die Preise"
+      ],
+      [
+        "das Geld",
+        "钱",
+        "名词·中性"
+      ],
+      [
+        "die Kasse",
+        "收银台",
+        "名词·阴性·复数：die Kassen"
+      ],
+      [
+        "der Euro",
+        "欧元",
+        "名词·阳性·复数：die Euro"
+      ],
+      [
+        "der Cent",
+        "欧分",
+        "名词·阳性·复数：die Cent"
+      ],
+      [
+        "die Karte",
+        "卡",
+        "名词·阴性·复数：die Karten"
+      ],
+      [
+        "die Tüte",
+        "袋子",
+        "名词·阴性·复数：die Tüten"
+      ],
+      [
+        "die Flasche",
+        "瓶子",
+        "名词·阴性·复数：die Flaschen"
+      ],
+      [
+        "kaufen",
+        "购买",
+        "动词"
+      ],
+      [
+        "bezahlen",
+        "付款",
+        "动词"
+      ],
+      [
+        "brauchen",
+        "需要",
+        "动词"
+      ],
+      [
+        "kosten",
+        "花费",
+        "动词"
+      ],
+      [
+        "bar",
+        "现金地",
+        "副词/形容词"
+      ]
+    ],
+    "vocab_ipa": [
+      "/ˈzuːpɐmaʁkt/",
+      "/ɡəˈʃɛft/",
+      "/pʁaɪ̯s/",
+      "/ɡɛlt/",
+      "/ˈkasə/",
+      "/ˈɔʏ̯ʁo/",
+      "/tsɛnt/",
+      "/ˈkaʁtə/",
+      "/ˈtyːtə/",
+      "/ˈflaʃə/",
+      "/ˈkaʊ̯fn̩/",
+      "/bəˈtsaːlən/",
+      "/ˈbʁaʊ̯xn̩/",
+      "/ˈkɔstn̩/",
+      "/baːɐ̯/"
+    ],
+    "examples": [
+      [
+        "Wie viel kostet das Brot?",
+        "面包多少钱？"
+      ],
+      [
+        "Das kostet zwei Euro fünfzig.",
+        "这个两欧元五十分。"
+      ],
+      [
+        "Ich brauche eine Flasche Wasser.",
+        "我需要一瓶水。"
+      ],
+      [
+        "Kann ich mit Karte bezahlen?",
+        "我可以刷卡吗？"
+      ]
+    ],
+    "examples_ipa": [
+      "/viː fiːl ˈkɔstət das bʁoːt/",
+      "/das ˈkɔstət tsvaɪ̯ ˈɔʏ̯ʁoː ˈfʏnftsɪç/",
+      "/ɪç ˈbʁaʊ̯xə ˈaɪ̯nə ˈflaʃə ˈvasɐ/",
+      "/kan ɪç mɪt ˈkaʁtə bəˈtsaːlən/"
+    ],
+    "dialogue": [
+      [
+        "Entschuldigung, wo finde ich die Milch?",
+        "不好意思，我在哪里可以找到牛奶？"
+      ],
+      [
+        "Die Milch ist dort links.",
+        "牛奶在那边左侧。"
+      ],
+      [
+        "Wie viel kostet das Brot?",
+        "面包多少钱？"
+      ],
+      [
+        "Ich bezahle mit Karte.",
+        "我刷卡付款。"
+      ]
+    ],
+    "dialogue_ipa": [
+      "/ɛntˈʃʊldɪɡʊŋ voː ˈfɪndə ɪç diː mɪlç/",
+      "/diː mɪlç ɪst dɔʁt lɪŋks/",
+      "/viː fiːl ˈkɔstət das bʁoːt/",
+      "/ɪç bəˈtsaːlə mɪt ˈkaʁtə/"
+    ],
+    "teaching": "询问价格最常用的句型是 Wie viel kostet …?。德国价格通常用逗号表示小数，例如 2,50 €。1 Euro 等于 100 Cent。",
+    "grammar_detail": "kosten 的第三人称单数形式是 kostet：Das Brot kostet zwei Euro.。haben 表示有：ich habe、du hast、er hat。brauchen 表示需要：ich brauche、du brauchst、er braucht。kein 否定名词：keine Tüte（没有/不需要袋子）。",
+    "pronunciation_note": "Euro 的 eu 读 [ɔʏ̯]；Karte 的 r 在标准德语口音中常呈现小舌音或弱化。价格朗读时注意 neunundneunzig 中个位在十位前。",
+    "oral": "模拟在超市找牛奶、询问面包价格、选择付款方式。",
+    "writing": "写一张购物清单，并写出三句询价或付款时会说的话。"
+  }
+]
