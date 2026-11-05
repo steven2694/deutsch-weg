@@ -1,0 +1,632 @@
+{
+  "city": {
+    "title": "德国城市与日常生活",
+    "desc": "交通、住房、购物、预约和公共服务",
+    "lessons": [
+      {
+        "lv": "A1",
+        "title": "乘坐公共交通",
+        "goal": "看懂简单车站信息并询问去向。",
+        "words": [
+          [
+            "der Bahnhof",
+            "/ˈbaːnhoːf/",
+            "火车站"
+          ],
+          [
+            "die Haltestelle",
+            "/ˈhaltəˌʃtɛlə/",
+            "车站/站点"
+          ],
+          [
+            "das Ticket",
+            "/ˈtɪkət/",
+            "车票"
+          ],
+          [
+            "der Bus",
+            "/bʊs/",
+            "公交车"
+          ]
+        ],
+        "de": "Wo ist die Haltestelle? — Dort links. Ich brauche ein Ticket nach Berlin.",
+        "zh": "车站在哪里？——在左边。我需要一张去柏林的车票。",
+        "task": "用德语询问车站在哪里，并说出你要去的城市。"
+      },
+      {
+        "lv": "A2",
+        "title": "看房与询问租金",
+        "goal": "询问房租、押金和看房时间。",
+        "words": [
+          [
+            "die Wohnung",
+            "/ˈvoːnʊŋ/",
+            "住房"
+          ],
+          [
+            "die Miete",
+            "/ˈmiːtə/",
+            "房租"
+          ],
+          [
+            "die Kaution",
+            "/kaʊ̯ˈtsi̯oːn/",
+            "押金"
+          ],
+          [
+            "der Vermieter",
+            "/fɛɐ̯ˈmiːtɐ/",
+            "房东"
+          ]
+        ],
+        "de": "Wie hoch ist die Miete? Ist die Wohnung noch frei? Kann ich die Wohnung besichtigen?",
+        "zh": "房租是多少？这套房子还空着吗？我可以看房吗？",
+        "task": "写三句询问房租、押金和看房时间的话。"
+      },
+      {
+        "lv": "B1",
+        "title": "向市政部门预约",
+        "goal": "用礼貌语言说明办理事项并预约。",
+        "words": [
+          [
+            "das Bürgeramt",
+            "/ˈbʏʁɡɐʔamt/",
+            "市民服务办公室"
+          ],
+          [
+            "die Anmeldung",
+            "/ˈanˌmɛldʊŋ/",
+            "住址登记"
+          ],
+          [
+            "der Termin",
+            "/tɛɐ̯ˈmiːn/",
+            "预约"
+          ],
+          [
+            "das Formular",
+            "/fɔʁmuˈlaːɐ̯/",
+            "表格"
+          ]
+        ],
+        "de": "Ich möchte einen Termin für die Anmeldung vereinbaren. Welche Unterlagen muss ich mitbringen?",
+        "zh": "我想预约办理住址登记。需要带哪些材料？",
+        "task": "模拟给市政部门写一封简短预约邮件。"
+      },
+      {
+        "lv": "B2",
+        "title": "比较城市生活成本",
+        "goal": "比较住房、交通和公共服务，并解释选择理由。",
+        "words": [
+          [
+            "die Lebenshaltungskosten",
+            "/ˈleːbn̩sˌhaltʊŋsˌkɔstn̩/",
+            "生活成本"
+          ],
+          [
+            "die Infrastruktur",
+            "/ɪnfʁastʁʊkˈtuːɐ̯/",
+            "基础设施"
+          ],
+          [
+            "die Erreichbarkeit",
+            "/ɛɐ̯ˈʁaɪ̯çbaːɐ̯kaɪ̯t/",
+            "可达性"
+          ],
+          [
+            "die Wohnlage",
+            "/ˈvoːnˌlaːɡə/",
+            "住房地段"
+          ]
+        ],
+        "de": "Bei der Wahl einer Stadt spielen nicht nur die Mieten, sondern auch die Verkehrsanbindung und die beruflichen Möglichkeiten eine Rolle.",
+        "zh": "选择城市时，起作用的不仅是房租，还有交通连接和职业机会。",
+        "task": "用四句话比较两个城市的居住条件。"
+      }
+    ]
+  },
+  "jobs": {
+    "title": "求职与 Ausbildung",
+    "desc": "岗位识别、申请材料、面试和双元制培训",
+    "lessons": [
+      {
+        "lv": "A1",
+        "title": "介绍职业与工作经历",
+        "goal": "说出职业、工作地点和基本经历。",
+        "words": [
+          [
+            "der Beruf",
+            "/bəˈʁuːf/",
+            "职业"
+          ],
+          [
+            "die Erfahrung",
+            "/ɛɐ̯ˈfaːʁʊŋ/",
+            "经验"
+          ],
+          [
+            "arbeiten",
+            "/ˈaʁbaɪ̯tn̩/",
+            "工作"
+          ],
+          [
+            "das Büro",
+            "/ˈbyːʁo/",
+            "办公室"
+          ]
+        ],
+        "de": "Ich habe einen Masterabschluss. Ich habe im juristischen Bereich gearbeitet.",
+        "zh": "我拥有硕士学位。我曾在法律相关领域工作。",
+        "task": "用简单德语介绍学历和工作领域。"
+      },
+      {
+        "lv": "A2",
+        "title": "询问 Ausbildung 岗位",
+        "goal": "询问培训岗位、开始时间和申请材料。",
+        "words": [
+          [
+            "die Ausbildung",
+            "/ˈaʊ̯sˌbɪldʊŋ/",
+            "职业培训"
+          ],
+          [
+            "der Ausbildungsplatz",
+            "/ˈaʊ̯sˌbɪldʊŋsˌplats/",
+            "培训岗位"
+          ],
+          [
+            "die Bewerbung",
+            "/bəˈvɛʁbʊŋ/",
+            "申请"
+          ],
+          [
+            "die Unterlagen",
+            "/ˈʊntɐˌlaːɡn̩/",
+            "申请材料"
+          ]
+        ],
+        "de": "Bieten Sie Ausbildungsplätze an? Welche Unterlagen brauche ich?",
+        "zh": "贵公司提供培训岗位吗？我需要哪些材料？",
+        "task": "写一封询问 Ausbildung 岗位的简短邮件。"
+      },
+      {
+        "lv": "B1",
+        "title": "阅读招聘广告",
+        "goal": "识别必备条件与加分条件。",
+        "words": [
+          [
+            "die Stellenanzeige",
+            "/ˈʃtɛlənˌʔantsaɪ̯ɡə/",
+            "招聘广告"
+          ],
+          [
+            "die Voraussetzung",
+            "/foːɐ̯ˈaʊ̯sˌzɛtsʊŋ/",
+            "前提条件"
+          ],
+          [
+            "die Anforderung",
+            "/ˈanfɔʁdɐʊŋ/",
+            "要求"
+          ],
+          [
+            "die Berufserfahrung",
+            "/bəˈʁuːfsʔɛɐ̯ˌfaːʁʊŋ/",
+            "工作经验"
+          ]
+        ],
+        "de": "Zu den Muss-Anforderungen gehören eine abgeschlossene Ausbildung und gute Deutschkenntnisse. Kenntnisse in Englisch sind von Vorteil.",
+        "zh": "必备条件包括完成职业培训和良好的德语能力。英语知识是加分项。",
+        "task": "把一则职位要求分成必须条件和加分条件。"
+      },
+      {
+        "lv": "B2",
+        "title": "准备结构化面试",
+        "goal": "用具体例子说明能力、动机和职业转型。",
+        "words": [
+          [
+            "die Selbstpräsentation",
+            "/ˈzɛlpstpʁɛzɛntaˌtsi̯oːn/",
+            "自我介绍"
+          ],
+          [
+            "die Verantwortlichkeit",
+            "/fɛɐ̯ˈʔantvɔʁtlɪçkaɪ̯t/",
+            "职责"
+          ],
+          [
+            "die Herausforderung",
+            "/hɛʁˈfɔʁdɐʊŋ/",
+            "挑战"
+          ],
+          [
+            "die Qualifikation",
+            "/kvalɪfɪkaˈtsi̯oːn/",
+            "资格"
+          ]
+        ],
+        "de": "Ich möchte meine juristische Erfahrung mit meiner sorgfältigen Arbeitsweise verbinden und mich im Bereich Compliance weiterentwickeln.",
+        "zh": "我希望把法律相关经验与严谨的工作方式结合起来，并在合规领域进一步发展。",
+        "task": "准备一段90秒德语自我介绍。"
+      }
+    ]
+  },
+  "compliance": {
+    "title": "Compliance 与职场",
+    "desc": "职场沟通、合规基础、AML/KYC 与风险表达",
+    "lessons": [
+      {
+        "lv": "A1",
+        "title": "办公室中的基本礼貌",
+        "goal": "在工作场景中问候、请求帮助和表达感谢。",
+        "words": [
+          [
+            "das Team",
+            "/tiːm/",
+            "团队"
+          ],
+          [
+            "die Kollegin",
+            "/koˈleːɡɪn/",
+            "女同事"
+          ],
+          [
+            "der Kollege",
+            "/koˈleːɡə/",
+            "男同事"
+          ],
+          [
+            "die Frage",
+            "/ˈfʁaːɡə/",
+            "问题"
+          ]
+        ],
+        "de": "Guten Morgen. Können Sie mir bitte helfen? Vielen Dank.",
+        "zh": "早上好。您能帮我一下吗？非常感谢。",
+        "task": "练习向同事礼貌请求帮助。"
+      },
+      {
+        "lv": "A2",
+        "title": "描述日常工作任务",
+        "goal": "介绍任务、截止日期和工作安排。",
+        "words": [
+          [
+            "die Aufgabe",
+            "/ˈaʊ̯fˌɡaːbə/",
+            "任务"
+          ],
+          [
+            "die Frist",
+            "/fʁɪst/",
+            "期限"
+          ],
+          [
+            "die Besprechung",
+            "/bəˈʃpʁɛçʊŋ/",
+            "会议"
+          ],
+          [
+            "prüfen",
+            "/ˈpʁyːfn̩/",
+            "检查"
+          ]
+        ],
+        "de": "Ich prüfe heute die Unterlagen. Die Aufgabe muss bis Freitag fertig sein.",
+        "zh": "我今天检查材料。这项任务必须在星期五前完成。",
+        "task": "用三句话说明一项工作任务和截止时间。"
+      },
+      {
+        "lv": "B1",
+        "title": "合规部门的风险沟通",
+        "goal": "说明风险、证据和后续行动。",
+        "words": [
+          [
+            "die Compliance",
+            "/kəmˈplaɪ̯əns/",
+            "合规"
+          ],
+          [
+            "das Risiko",
+            "/ˈʁiːziko/",
+            "风险"
+          ],
+          [
+            "der Hinweis",
+            "/ˈhɪnvaɪ̯s/",
+            "提示/线索"
+          ],
+          [
+            "die Prüfung",
+            "/ˈpʁyːfʊŋ/",
+            "审查"
+          ]
+        ],
+        "de": "Bei der Prüfung wurden mögliche Risiken festgestellt. Wir müssen den Sachverhalt weiter untersuchen.",
+        "zh": "审查中发现了潜在风险。我们必须进一步调查相关事实。",
+        "task": "用德语写一段简短风险提示。"
+      },
+      {
+        "lv": "B2",
+        "title": "AML/KYC 案例讨论",
+        "goal": "解释客户尽职调查的目的与风险升级流程。",
+        "words": [
+          [
+            "die Geldwäsche",
+            "/ˈɡɛltˌvɛʃə/",
+            "洗钱"
+          ],
+          [
+            "die Sorgfaltspflicht",
+            "/ˈzɔʁkfaltsˌpflɪçt/",
+            "尽职调查义务"
+          ],
+          [
+            "die Kundenidentifizierung",
+            "/ˈkʊndn̩ʔidɛntifiˌtsiːʁʊŋ/",
+            "客户身份识别"
+          ],
+          [
+            "die Verdachtsmeldung",
+            "/fɛɐ̯ˈdaxtsˌmɛldʊŋ/",
+            "可疑活动报告"
+          ]
+        ],
+        "de": "Wenn begründete Anhaltspunkte für Geldwäsche vorliegen, müssen die internen Melde- und Eskalationsverfahren beachtet werden.",
+        "zh": "如果存在有根据的洗钱迹象，就必须遵守内部报告和升级程序。",
+        "task": "用四句话解释一个虚构的KYC风险案例。"
+      }
+    ]
+  },
+  "social": {
+    "title": "社交、约会与 LGBTQ+ 生活",
+    "desc": "交友、表达兴趣、同意与边界、社群融入",
+    "lessons": [
+      {
+        "lv": "A1",
+        "title": "认识新朋友",
+        "goal": "打招呼、介绍兴趣并询问对方爱好。",
+        "words": [
+          [
+            "der Freund",
+            "/fʁɔʏ̯nt/",
+            "男性朋友/男友，依语境"
+          ],
+          [
+            "das Hobby",
+            "/ˈhɔbi/",
+            "爱好"
+          ],
+          [
+            "gern",
+            "/ɡɛʁn/",
+            "喜欢做"
+          ],
+          [
+            "kennenlernen",
+            "/ˈkɛnənˌlɛʁnən/",
+            "认识"
+          ]
+        ],
+        "de": "Ich spiele gern Tennis. Was machst du gern? Schön, dich kennenzulernen.",
+        "zh": "我喜欢打网球。你喜欢做什么？很高兴认识你。",
+        "task": "向新朋友介绍两个兴趣。"
+      },
+      {
+        "lv": "A2",
+        "title": "提出约会邀请",
+        "goal": "礼貌邀请对方喝咖啡或一起散步。",
+        "words": [
+          [
+            "die Einladung",
+            "/ˈaɪ̯nˌlaːdʊŋ/",
+            "邀请"
+          ],
+          [
+            "spazieren gehen",
+            "/ʃpaˈtsiːʁən ɡeːən/",
+            "散步"
+          ],
+          [
+            "der Kaffee",
+            "/kaˈfeː/",
+            "咖啡"
+          ],
+          [
+            "passen",
+            "/ˈpasn̩/",
+            "合适"
+          ]
+        ],
+        "de": "Hast du Lust, am Samstag einen Kaffee trinken zu gehen? Passt dir das?",
+        "zh": "你愿意星期六一起喝咖啡吗？你时间合适吗？",
+        "task": "写一条邀请消息，并给出礼貌拒绝的表达。"
+      },
+      {
+        "lv": "B1",
+        "title": "表达边界与尊重同意",
+        "goal": "清晰表达舒适程度、意愿和个人边界。",
+        "words": [
+          [
+            "die Zustimmung",
+            "/ˈtsuːʃtɪmʊŋ/",
+            "同意"
+          ],
+          [
+            "die Grenze",
+            "/ˈɡʁɛntsə/",
+            "界限"
+          ],
+          [
+            "respektieren",
+            "/ʁɛspɛkˈtiːʁən/",
+            "尊重"
+          ],
+          [
+            "sich wohlfühlen",
+            "/zɪç ˈvoːlˌfyːlən/",
+            "感到自在"
+          ]
+        ],
+        "de": "Ich fühle mich damit nicht wohl. Bitte respektiere meine Grenze. Zustimmung muss freiwillig sein.",
+        "zh": "我对此感到不自在。请尊重我的界限。同意必须是自愿的。",
+        "task": "用德语表达一个界限，并练习尊重对方拒绝。"
+      },
+      {
+        "lv": "B2",
+        "title": "社群参与与身份表达",
+        "goal": "讨论包容、歧视、社群活动和公共空间。",
+        "words": [
+          [
+            "die Vielfalt",
+            "/ˈfiːlfalt/",
+            "多样性"
+          ],
+          [
+            "die Gleichberechtigung",
+            "/ˈɡlaɪ̯çbəˌʁɛçtɪɡʊŋ/",
+            "平等权利"
+          ],
+          [
+            "die Ausgrenzung",
+            "/ˈaʊ̯sˌɡʁɛntsʊŋ/",
+            "排斥"
+          ],
+          [
+            "die Gemeinschaft",
+            "/ɡəˈmaɪ̯nʃaft/",
+            "社群"
+          ]
+        ],
+        "de": "Eine offene Gemeinschaft lebt davon, dass unterschiedliche Lebensweisen respektiert und Diskriminierung aktiv angesprochen werden.",
+        "zh": "开放的社群建立在尊重不同生活方式、主动指出歧视的基础上。",
+        "task": "用一段短文介绍你希望参与的社群活动。"
+      }
+    ]
+  },
+  "tennis": {
+    "title": "网球与俱乐部",
+    "desc": "约球、预约场地、俱乐部社交和比赛表达",
+    "lessons": [
+      {
+        "lv": "A1",
+        "title": "网球装备与喜好",
+        "goal": "说出网球装备并表达是否喜欢网球。",
+        "words": [
+          [
+            "der Tennisschläger",
+            "/ˈtɛnɪsˌʃlɛːɡɐ/",
+            "网球拍"
+          ],
+          [
+            "der Ball",
+            "/bal/",
+            "球"
+          ],
+          [
+            "der Platz",
+            "/plats/",
+            "球场"
+          ],
+          [
+            "Tennis spielen",
+            "/ˈtɛnɪs ˈʃpiːlən/",
+            "打网球"
+          ]
+        ],
+        "de": "Ich spiele gern Tennis. Wo ist der Tennisplatz?",
+        "zh": "我喜欢打网球。网球场在哪里？",
+        "task": "说出三件网球装备并介绍自己是否喜欢网球。"
+      },
+      {
+        "lv": "A2",
+        "title": "约球与预约场地",
+        "goal": "约时间、询问场地是否空闲。",
+        "words": [
+          [
+            "der Tennisverein",
+            "/ˈtɛnɪs fɛɐ̯ˌʔaɪ̯n/",
+            "网球俱乐部"
+          ],
+          [
+            "reservieren",
+            "/ʁezɛʁˈviːʁən/",
+            "预订"
+          ],
+          [
+            "frei",
+            "/fʁaɪ̯/",
+            "空闲"
+          ],
+          [
+            "das Training",
+            "/ˈtʁɛːnɪŋ/",
+            "训练"
+          ]
+        ],
+        "de": "Ist der Platz am Samstag um zehn Uhr frei? Können wir eine Stunde reservieren?",
+        "zh": "星期六十点球场有空吗？我们可以预订一小时吗？",
+        "task": "给俱乐部写一条预约球场的消息。"
+      },
+      {
+        "lv": "B1",
+        "title": "讨论比赛与比分",
+        "goal": "描述比分、比赛过程和球员表现。",
+        "words": [
+          [
+            "der Aufschlag",
+            "/ˈaʊ̯fˌʃlaːk/",
+            "发球"
+          ],
+          [
+            "der Satz",
+            "/zats/",
+            "盘"
+          ],
+          [
+            "das Match",
+            "/mɛtʃ/",
+            "比赛"
+          ],
+          [
+            "gewinnen",
+            "/ɡəˈvɪnən/",
+            "获胜"
+          ]
+        ],
+        "de": "Sie gewann den ersten Satz, aber im zweiten Satz machte sie mehr Fehler beim Aufschlag.",
+        "zh": "她赢得了第一盘，但第二盘发球失误更多。",
+        "task": "用四句话描述一场比赛。"
+      },
+      {
+        "lv": "B2",
+        "title": "战术与赛事分析",
+        "goal": "比较战术选择并表达有依据的观点。",
+        "words": [
+          [
+            "die Rückhand",
+            "/ˈʁʏkˌhant/",
+            "反手"
+          ],
+          [
+            "der Vorhandwinner",
+            "/ˈfoːɐ̯hantˌvɪnɐ/",
+            "正手制胜分"
+          ],
+          [
+            "die Grundlinie",
+            "/ˈɡʁʊntlini̯ə/",
+            "底线"
+          ],
+          [
+            "die Spielstrategie",
+            "/ˈʃpiːlʃtʁateˌɡiː/",
+            "比赛策略"
+          ]
+        ],
+        "de": "Durch eine konsequente Variation der Länge und Richtung zwang sie ihre Gegnerin zu einer defensiveren Position.",
+        "zh": "通过持续变化击球深度和方向，她迫使对手处于更防守的位置。",
+        "task": "选择一场网球比赛，用一段文字分析双方战术。"
+      }
+    ]
+  }
+}

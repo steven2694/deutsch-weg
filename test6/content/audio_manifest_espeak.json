@@ -1,0 +1,246 @@
+{
+  "voice": "eSpeak German synthetic voice",
+  "is_native_recording": false,
+  "clips": [
+    {
+      "text": "hallo",
+      "file": "audio/Hallo.mp3"
+    },
+    {
+      "text": "guten_morgen",
+      "file": "audio/Guten Morgen.mp3"
+    },
+    {
+      "text": "guten_tag",
+      "file": "audio/Guten Tag.mp3"
+    },
+    {
+      "text": "guten_abend",
+      "file": "audio/Guten Abend.mp3"
+    },
+    {
+      "text": "gute_nacht",
+      "file": "audio/Gute Nacht.mp3"
+    },
+    {
+      "text": "tschues",
+      "file": "audio/Tschüss.mp3"
+    },
+    {
+      "text": "auf_wiedersehen",
+      "file": "audio/Auf Wiedersehen.mp3"
+    },
+    {
+      "text": "bitte",
+      "file": "audio/Bitte.mp3"
+    },
+    {
+      "text": "danke",
+      "file": "audio/Danke.mp3"
+    },
+    {
+      "text": "vielen_dank",
+      "file": "audio/Vielen Dank.mp3"
+    },
+    {
+      "text": "ja",
+      "file": "audio/Ja.mp3"
+    },
+    {
+      "text": "nein",
+      "file": "audio/Nein.mp3"
+    },
+    {
+      "text": "entschuldigung",
+      "file": "audio/Entschuldigung.mp3"
+    },
+    {
+      "text": "wie_gehts",
+      "file": "audio/Wie geht es dir?.mp3"
+    },
+    {
+      "text": "gut_danke",
+      "file": "audio/Gut, danke..mp3"
+    },
+    {
+      "text": "ich_heisse",
+      "file": "audio/Ich heiße ....mp3"
+    },
+    {
+      "text": "ich_bin",
+      "file": "audio/Ich bin ....mp3"
+    },
+    {
+      "text": "ich_komme",
+      "file": "audio/Ich komme aus China..mp3"
+    },
+    {
+      "text": "ich_wohne",
+      "file": "audio/Ich wohne in ....mp3"
+    },
+    {
+      "text": "ich_lerne",
+      "file": "audio/Ich lerne Deutsch..mp3"
+    },
+    {
+      "text": "sprechen_sie",
+      "file": "audio/Sprechen Sie Deutsch?.mp3"
+    },
+    {
+      "text": "ich_verstehe",
+      "file": "audio/Ich verstehe..mp3"
+    },
+    {
+      "text": "ich_verstehe_nicht",
+      "file": "audio/Ich verstehe nicht..mp3"
+    },
+    {
+      "text": "bitte_langsam",
+      "file": "audio/Bitte sprechen Sie langsam..mp3"
+    },
+    {
+      "text": "noch_einmal",
+      "file": "audio/Noch einmal, bitte..mp3"
+    },
+    {
+      "text": "der_name",
+      "file": "audio/der Name.mp3"
+    },
+    {
+      "text": "die_familie",
+      "file": "audio/die Familie.mp3"
+    },
+    {
+      "text": "das_buch",
+      "file": "audio/das Buch.mp3"
+    },
+    {
+      "text": "das_wasser",
+      "file": "audio/das Wasser.mp3"
+    },
+    {
+      "text": "der_apfel",
+      "file": "audio/der Apfel.mp3"
+    },
+    {
+      "text": "die_banane",
+      "file": "audio/die Banane.mp3"
+    },
+    {
+      "text": "der_mann",
+      "file": "audio/der Mann.mp3"
+    },
+    {
+      "text": "die_frau",
+      "file": "audio/die Frau.mp3"
+    },
+    {
+      "text": "das_kind",
+      "file": "audio/das Kind.mp3"
+    },
+    {
+      "text": "ich",
+      "file": "audio/ich.mp3"
+    },
+    {
+      "text": "du",
+      "file": "audio/du.mp3"
+    },
+    {
+      "text": "er",
+      "file": "audio/er.mp3"
+    },
+    {
+      "text": "sie",
+      "file": "audio/sie.mp3"
+    },
+    {
+      "text": "wir",
+      "file": "audio/wir.mp3"
+    },
+    {
+      "text": "eins",
+      "file": "audio/eins.mp3"
+    },
+    {
+      "text": "zwei",
+      "file": "audio/zwei.mp3"
+    },
+    {
+      "text": "drei",
+      "file": "audio/drei.mp3"
+    },
+    {
+      "text": "vier",
+      "file": "audio/vier.mp3"
+    },
+    {
+      "text": "fuenf",
+      "file": "audio/fünf.mp3"
+    },
+    {
+      "text": "sechs",
+      "file": "audio/sechs.mp3"
+    },
+    {
+      "text": "sieben",
+      "file": "audio/sieben.mp3"
+    },
+    {
+      "text": "acht",
+      "file": "audio/acht.mp3"
+    },
+    {
+      "text": "neun",
+      "file": "audio/neun.mp3"
+    },
+    {
+      "text": "zehn",
+      "file": "audio/zehn.mp3"
+    },
+    {
+      "text": "elf",
+      "file": "audio/elf.mp3"
+    },
+    {
+      "text": "zwoelf",
+      "file": "audio/zwölf.mp3"
+    },
+    {
+      "text": "dreizehn",
+      "file": "audio/dreizehn.mp3"
+    },
+    {
+      "text": "vierzehn",
+      "file": "audio/vierzehn.mp3"
+    },
+    {
+      "text": "fuenfzehn",
+      "file": "audio/fünfzehn.mp3"
+    },
+    {
+      "text": "zwanzig",
+      "file": "audio/zwanzig.mp3"
+    },
+    {
+      "text": "mann",
+      "file": "audio/Mann.mp3"
+    },
+    {
+      "text": "name",
+      "file": "audio/Name.mp3"
+    },
+    {
+      "text": "ich_ipa",
+      "file": "audio/Banane.mp3"
+    },
+    {
+      "text": "banane",
+      "file": "audio/Familie.mp3"
+    },
+    {
+      "text": "familie",
+      "file": "audio/Deutsch lernen.mp3"
+    }
+  ]
+}
